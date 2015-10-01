@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 3: Part 2</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+
+    // ============= ROCK SCISSORS PAPER =================
+        /*
+        //1
+        var userChoice = prompt("Choose rock, paper, or scissors?");
+        userChoice = userChoice.toLowerCase();
+
+
+        //2
+        var compChoice = Math.random();
+
+        //3
+        if (compChoice <= 0.34) {
+            compChoice = "rock";
+        } else if (compChoice <= 0.67) {
+            compChoice = "paper";
+        } else {
+            compChoice = "scissors";
+        }
+
+        //4 AND //5
+        if (userChoice == compChoice) {
+            alert("It's a tie");
+        } else if (userChoice == "rock") {
+            if (compChoice == "scissors") {
+                alert("You win! The computer chose scissors.");
+            } else {
+                alert("You lose! The computer chose paper,");
+            }
+        } else if (userChoice == "paper") {
+            if (compChoice == "rock") {
+                alert("You win! The computer chose rock.");
+            } else {
+                alert("You lose! The computer chose scissors.");
+            }
+        } else if (userChoice == "scissors") {
+            if (compChoice == "paper") {
+                alert("You win! The computer chose paper.");
+            } else {
+                alert("You lose! The computer chose rock.");
+            }
+        }
+
+         //6
+        if (!(userChoice == "rock" || userChoice == "paper" || userChoice == "scissors")) {
+            alert("You can only choose rock, paper, or scissors! Try again!");
+
+        }
+        */
+
+
+
+
+    // ============= The Basic CALCULATOR =================
+        /*
+        //1
+        function data() {
+         var num1 = prompt("Enter a number.");
+
+        //2
+         var num2 = prompt("Enter a second number.");
+
+        //3
+         var operation = prompt("Which operation do you want to perform (add, subtract, multiply, or divide)?");
+            alert(calculate(Number(num1), Number(num2), operation));
+        }
+
+        //4 //5 //6 //7
+
+        function calculate(num1, num2, operation) {
+                switch (operation.toLowerCase()) {
+                    case "add":
+                        return num1 + num2;
+                        break;
+                    case "subtract":
+                        return num1 - num2;
+                        break;
+                    case "multiply":
+                        return num1 * num2;
+                        break;
+                    case "divide":
+                        return num1 / num2;
+                    break;
+                    default:
+                    alert("Hol' up! You didn't choose an operation (add, subtract, multiply, or divide). One mo'gain!");
+
+                    data();
+                }
+        }
+        */
+
+
+
+        // ============= DEAF BY JAVASCRIPT =================
+
+
+        //1
+        /*
+        function alphaBetOrder(str) {
+            return str.split("").sort().join("");
+        }
+        console.log(alphaBetOrder("webmaster"));
+        */
+
+
+        //2
+        /*
+        function upperCase(str) {
+            var phrase1 = str.split(" ");
+            var phrase2 = [];
+
+            for (var i = 0; i < phrase1.length; i++) {
+                phrase2.push(phrase1[i].charAt(0).toUpperCase() + phrase1[i].slice(1));
+            }
+            return phrase2.join(" ");
+        }
+        console.log(upperCase("deaf by javascript"));
+        */
+
+        //3
+        /*
+        function numOfVowels(string1) {
+            var vowels = "aeiou";
+            var vowelCount = 0;
+
+            for(var i = 0; i < string1.length; i++) {
+                if (vowels.indexOf(string1[i]) !== -1) {
+                    vowelCount += 1;
+                }
+            }
+            return vowelCount;
+        }
+        console.log(numOfVowels("Dude did this work???"));
+        */
+
+
+        //4
+        // These are ridiculous, Zak!!
+
+        //5
+
+
+
+
+
+
+    </script>
+</head>
+<body onload="data()">
+    <h1>Assignment 3: Part 2</h1>
+    <p>Rock Scissors Paper!</p>
+    <p>Calculator!</p>
+    <p>Deaf by Javascript!</p>
+</body>
+</html>

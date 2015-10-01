@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 3: Part 1</title>
+    <meta charset="UTF-8">
+
+    <script>
+    // Part 1:
+
+// ============ Practice with Arrays ============== //
+
+    //1
+        // var favMovies = ["Ferris Bueler's Day Off", "Terminator 2", "The Goonies", "Snatch", "The Godfather"];
+        // console.log(favMovies[1]);
+
+
+        //2
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        console.log(movies[0]);
+        */
+
+        //3
+        /*
+        var favMovies = ["Ferris Bueler's Day Off", "Terminator 2", "The Goonies", "Snatch", "The Godfather"];
+        favMovies.splice(1, 0, "The Matrix");
+        console.log(favMovies.length);
+        */
+
+
+        //4
+
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        delete movies[0];
+        console.log(movies);
+        */
+
+        //5
+        /*
+
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        for (var i = 0; i < movies.length; i++) {
+            console.log(movies[i]);
+        }
+
+        */
+
+        //6
+        /*
+
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        for (var i in movies) {
+            console.log(movies[i]);
+        }
+        */
+
+        //7
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        movies.sort()
+
+        for (var i in movies) {
+            console.log(movies[i]);
+        }
+        */
+
+        //8
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        var leastFavMovies = [];
+        leastFavMovies[0] = "Mortdecai";
+        leastFavMovies[1] = "The Loft";
+        leastFavMovies[2] = "Mall Cop 2";
+
+        console.log("Movies I like:\n\n")
+        for (var i in movies) {
+            console.log(movies[i]);
+        }
+
+        console.log("\n\nMovies I regret watching:\n\n")
+        for (var i in leastFavMovies) {
+            console.log(leastFavMovies[i]);
+        }
+        */
+
+        //9
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        var leastFavMovies = [];
+        leastFavMovies[0] = "Mortdecai";
+        leastFavMovies[1] = "The Loft";
+        leastFavMovies[2] = "Mall Cop 2";
+
+        movies = movies.concat(leastFavMovies);
+        movies.reverse();
+        movies.sort();
+        for (var i in movies) {
+            console.log(movies[i]);
+        }
+        */
+
+        // 10
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        var leastFavMovies = [];
+        leastFavMovies[0] = "Mortdecai";
+        leastFavMovies[1] = "The Loft";
+        leastFavMovies[2] = "Mall Cop 2";
+
+        movies = movies.concat(leastFavMovies);
+            console.log(movies.pop());
+            */
+
+        //11
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+
+        var leastFavMovies = [];
+        leastFavMovies[0] = "Mortdecai";
+        leastFavMovies[1] = "The Loft";
+        leastFavMovies[2] = "Mall Cop 2";
+
+        movies = movies.concat(leastFavMovies);
+            console.log(movies.shift());
+        */
+
+        //12
+        /*
+        var movies = [];
+        movies[0] = "Ferris Bueler's Day Off";
+        movies[1] = "Terminator 2";
+        movies[2] = "The Goonies";
+        movies[3] = "Snatch";
+        movies[4] = "The Godfather";
+        movies[5] = "The Matrix";
+        movies[6] = "Sixteen Candles";
+        movies[7] = "Mortdecai";
+        movies[8] = "The Loft";
+        movies[9] = "Mall Cop 2";
+
+        movies.splice(7, 9, "Pulp Fiction", "Django");
+        console.log(movies);
+        */
+
+        //13
+        /*
+        var employee1 = [];
+        employee1["id"] = 1;
+        employee1["name"] = "Jan Michelle Santos";
+        employee1["title"] = "Front-End Web Developer";
+        employee1["department"] = "Awesome";
+        employee1["current"] = true;
+
+        var employee2 = [];
+        employee2["id"] = 2;
+        employee2["name"] = "Chatta Fuckup";
+        employee2["title"] = "Supervisor";
+        employee2["department"] = "Human Resources";
+        employee2["current"] = true;
+
+        var employees = [employee1, employee2]
+        console.log(employees[1]["name"]);
+        */
+
+
+        // 14
+        /*
+        var employee1 = [];
+        employee1["id"] = 1;
+        employee1["name"] = "Jan Michelle Santos";
+        employee1["title"] = "Front-End Web Developer";
+        employee1["department"] = "Awesome";
+        employee1["current"] = true;
+
+        var employee2 = [];
+        employee2["id"] = 2;
+        employee2["name"] = "Chatta Fackup";
+        employee2["title"] = "Supervisor";
+        employee2["department"] = "Human Resources";
+        employee2["current"] = true;
+
+        var employees = [employee1, employee2]
+        for (var i = 0; i < employees.length; i++) {
+            console.log(employees[i]["name"]);
+        }
+        */
+
+        //15
+        /*
+        var employee1 = [];
+        employee1["id"] = 1;
+        employee1["name"] = "Jan Michelle Santos";
+        employee1["title"] = "Front-End Web Developer";
+        employee1["department"] = "Awesome";
+        employee1["current"] = true;
+
+        var employee2 = [];
+        employee2["id"] = 2;
+        employee2["name"] = "Chatta Fackup";
+        employee2["title"] = "Supervisor";
+        employee2["department"] = "Human Resources";
+        employee2["current"] = true;
+
+        var employee3 = [];
+        employee2["id"] = 3;
+        employee2["name"] = "Donald Chump";
+        employee2["title"] = "CEO";
+        employee2["department"] = "Human Resources";
+        employee2["current"] = false;
+
+        var employees = [employee1, employee2, employee3]
+        for (var i = 0; i < employees.length; i++) {
+            if (employees[i]["isCurrent"] != false) {
+                console.log(employees[i]["name"]);
+            }
+        }
+        */
+
+        //16
+        /*
+        var movies = [["Ferris Bueler's Day Off", 1], ["Terminator 2", 2], ["Pulp Fiction", 3], ["The Goonies", 4], ["Sixteen Candles", 5]];
+        var movieNames = [];
+        for (var i in movies) {
+            movieNames += "\n" + movies[i].filter(function(item) {
+                return typeof item === "string";
+            });
+        }
+        console.log(movieNames);
+        */
+
+
+// ============ Practice with FUNCTIONS ============== //
+
+        //1
+        /*
+        function displayMessage(parameter1) {
+            console.log(parameter1);
+        }
+        displayMessage("Howdy there, cowboy!");
+        */
+
+
+        //2
+        /*
+        function calculate(parameter1, parameter2) {
+            return (parameter1 % parameter2);
+        }
+        console.log(calculate(9, 2));
+        */
+
+
+        //3
+        /*
+        var employees = ["Zak", "Jessica", "Mark", "Fred", "Sally"];
+
+        var showEmployee = function(employee) {
+            var totalEmployees = "";
+            for (var element in employee) {
+                totalEmployees += employee[element].toUpperCase() + "\n";
+            }
+            return "Employees:\n\n" + totalEmployees;
+        }
+
+        console.log(showEmployee(employees));
+        */
+
+
+    </script>
+</head>
+
+    <body>
+        <h1>Assignment 3: Part 1</h1>
+        <p>Arrays and Functions!</p>
+    </body>
+</html>
